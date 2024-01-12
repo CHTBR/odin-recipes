@@ -1,0 +1,30 @@
+@font-face {
+    font-family: kunstscript;
+    src: url(fonts/kunstler-script-regular/kunstler-script-regular.ttf) format(TrueType);
+}
+
+/* General styles */
+html {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+    margin: inherit;
+    padding: inherit;
+}
+
+h1 {
+    background-color: #FFC107;
+    color: white;
+    font-family: kunstscript, serif;
+    font-weight: normal;
+}
+
+/*navigation */
+nav ul {
+    list-style: none;
+}
