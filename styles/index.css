@@ -1,96 +1,104 @@
-
-/* Index heading */
-nav a {
-    text-decoration: none;
-}
-
-nav a {
-    border: 0 solid #FFC107;
-    color: transparent;
-    height: 100%;
+/* General styles */
+h1 {
     width: 100%;
 }
 
-h1 {
-    font-size: 12vw;
-    line-height: 22vw;
+.img_link {
+    display: inline-block;
 }
 
+img {
+    border: solid 10px #EF6461;
+    width: 100%;
+}
 
-/* Mobile display */
-@media (max-width: 546px) {
-    a[href*="katsudon"] {
-        background-image: url(../img/katsudon-mobile.jpg);
-    }
+footer {
+    background-color: #EF6461;
+}
 
-    a[href*="pancakes"] {
-        background-image: url(../img/pancakes-mobile.jpg);
-    }
-
-    a[href*="kimchi"] {
-        background-image: url(../img/kimchi-mobile.jpg);
+/* Mobile phone layout */
+@media (max-width: 621px) {
+    body {
+        background-color: #413C58;
+        margin: 0 0 0 0;
+        width: inherit;
     }
 
     h1 {
-        order: -1;
-    }
-    
-    header {
-        display: flex;
-        flex-direction: column;
-    }
-
-    nav ul {
-        display: inherit;
-    }
-
-    nav a {
-        background-size: 100%;
-        border-top: none;
-        border-width: 2vw;
-        display: inline-block;
-        height: 100vw;
-    }
-}
-
-/* Desktop display */
-@media (min-width: 546px) {
-    a[href*="katsudon"] {
-        background-image: url(../img/katsudon-desktop.jpg);
-        background-position: right;
-        background-size: cover;
-    }
-
-    a[href*="pancakes"] {
-        background-image: url(../img/pancakes-desktop.jpg);
-    }
-
-    a[href*="kimchi"] {
-        background-image: url(../img/kimchi-desktop.jpg);
-    }
-
-    nav ul {
-        display: grid;
-        grid-template: 1fr calc(30vh + 15vw)/ 1fr 1fr;
-        height: 100vh;
-    }
-
-    li:has(a[href*="katsudon"]) {
-        grid-column: 1 / span 2;
-    }
-
-    nav a {
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        border-width: 10px;
-        display: inline-block;
+        font-size: 9vh;
+        height: 11vh;
+        line-height: 11vh;
         text-align: center;
     }
 
+    p {
+        font-size: 6vw;
+    }
+
+    div {
+        background-color: #FFC107;
+        display: flex;
+        flex-direction: column;
+        height: 63vh;
+        margin-top: 13vh;
+    }
+
+    img {
+        width: 75%;
+    }
+
+    .img_link {
+        height: 50%;
+        margin: auto;
+        margin-top: 3%;
+        margin-bottom: 5%;
+    }
+
+    h2 {
+        display: inline-block;
+        height: 10%;
+        font-size: 100%;
+    }
+
+    h2 a {
+        display: inherit;
+        height: 100%;
+        width: 100%;
+        font-size: 12.5vw;
+    }
+
+    /*
+    Heading: 11% vh
+    1 content panel: 63% vh
+    1 gap: 13% vh
+    */
+}
+
+@media (min-width: 622px) {
     h1 {
-        left: 25vw;
+        line-height: 90vh;
+        font-size: 20vh;
+    }
+
+    div {
+        height: 100vh;
+        position: relative;
+        text-align: left;
+        padding: 5vw;
+    }
+
+    .katsudon .img_link {
         position: absolute;
-        top: calc(60vh - 15vw);
-        width: 50vw;
+        right: -5vw;
+        top: 5vw;
+        width: 40vw;
+    }
+
+    h2 {
+        font-size: 7.5vw;
+    }
+
+    p {
+        font-size: 2.5vw;
     }
 }

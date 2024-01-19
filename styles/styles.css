@@ -4,27 +4,59 @@
 }
 
 /* General styles */
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     padding: 0px;
     margin: 0px;
     text-align: center;
     box-sizing: border-box;
+    background-color: #413C58;
 }
 
-* {
-    box-sizing: inherit;
-    margin: inherit;
-    padding: inherit;
+body {
+    width: 80%;
+    margin: auto;
+    margin-top: 10vw;
+    background-color: #FFC107;
+}
+
+h1,
+h2 {
+    color: #fcfcfc;
+    font-family: kunstscript, serif;
+    font-weight: bold;
 }
 
 h1 {
     background-color: #FFC107;
-    color: white;
-    font-family: kunstscript, serif;
-    font-weight: normal;
+    margin: 0;
 }
 
-/*navigation */
-nav ul {
-    list-style: none;
+p {
+    color: #413C58;
+}
+
+/* ||/Links */
+a,
+a:link {
+    color: #fcfcfc;
+}
+
+a:visited {
+    color: #6d6d6d;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+    color: #EF6461;
+}
+
+a:active {
+    color: #413C58;
 }
